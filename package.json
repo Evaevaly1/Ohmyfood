@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 du parcours OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evaevaly1/Ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evaevaly1/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Evaevaly1/Ohmyfood#readme"
+}

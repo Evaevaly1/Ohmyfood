@@ -1,0 +1,19 @@
+.btn {
+  a {
+    color: #ffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    align-items: center;
+  }
+
+  padding: 16px 25px;
+  background: linear-gradient(0deg, rgba(147, 86, 220, 1) 5%, rgba(255, 121, 218, 1) 100%);
+  background-color: $primaire;
+  border-radius: 30px;
+  
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+  }
+}

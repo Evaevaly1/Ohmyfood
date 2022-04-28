@@ -1,0 +1,20 @@
+@import "components/loader";
+// Variables
+@import "utils/variables";
+@import "utils/break-points";
+@import "utils/mixins";
+@import "utils/animation";
+// Base
+@import "Base/reset";
+
+// layouts
+@import "layouts/container";
+// components
+@import "components/button";
+@import "components/heart";
+// Pages
+@import "pages/header";
+@import "pages/hero";
+@import "pages/main";
+@import "pages/menu";
+@import "pages/footer";

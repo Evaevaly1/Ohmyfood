@@ -1,0 +1,143 @@
+@import "../utils/mixins";
+main {
+  .fonctionnements {
+    padding-bottom: 30px;
+
+    &__title {
+      margin-left: 6%;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      padding-top: 25px;
+      font-size: 1.7rem;
+      font-weight: 900;
+      @include desktop {
+        text-align: center;
+      }
+    }
+    .step {
+      position: relative;
+      background-color: whitesmoke;
+      border-radius: 15px;
+      width: 88%;
+      height: auto;
+      margin: 20px auto 20px auto;
+      box-shadow: 0 5px 8px #0000002e;
+
+      &__content {
+        display: flex;
+        justify-content: flex-start;
+        padding: 25px 0;
+        margin-bottom: 15px;
+        align-items: center;
+      }
+
+      &__number {
+        position: absolute;
+        padding: 2px 6px;
+        background-color: $primaire;
+        border-radius: 100%;
+        color: #ffff;
+        top: 20px;
+        left: -10px;
+        font-size: 1.05rem;
+        text-align: center;
+      }
+
+      .fas {
+        margin-left: 30px;
+        font-weight: bold;
+      }
+
+      &__text {
+        margin-left: 30px;
+        font-weight: bold;
+        color: black;
+      }
+
+      &:hover {
+        background-color: #f0e4ffe7;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        .fas {
+          color: #9356dc;
+        }
+      }
+    }
+  }
+  .restaurants {
+    background-color: $grey-color;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    &__title {
+      font-size: 1.7rem;
+      font-weight: 900;
+      margin-left: 6%;
+      margin-bottom: 30px;
+      letter-spacing:1;
+      margin-top: 50px;
+
+      @include desktop {
+        text-align: center;
+        margin: 15px;
+      }
+    }
+    .cards {
+      @include desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .resto {
+      position: relative;
+      display: block;
+      width: 88%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #ffff;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      height: 250px;
+      overflow: hidden;
+      
+      &__image img {
+        width: 100%;
+        border-radius: 14px 14px 0px 0px;
+        max-height: 240px;
+        object-fit: cover;
+        margin-top: -55px;
+      }
+
+      &__content {
+        color: rgb(0, 0, 0);
+        padding: 12px;
+        margin-top: -5px;
+      }
+      &__new {
+        position: absolute;
+        padding: 5px;
+        top: 15px;
+        right: 15px;
+        background-color: $tertiaire;
+        color: #369658;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 800;
+      }
+      &__heart {
+        position: absolute;
+        bottom: 26px;
+        right: 20px;
+        font-size: 30px;
+        .fa-2x {
+          font-size: 2rem;
+        }
+        .menu__like {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
